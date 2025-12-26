@@ -2,8 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { ArrowRight, Award, Clock, Heart, Shield, Target, Users } from "lucide-react";
+
+declare global {
+  interface Window {
+    Calendly: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
+const openCalendly = () => {
+  window.Calendly?.initPopupWidget({ url: 'https://calendly.com/sean_golley/30min' });
+};
 
 const values = [
   {
@@ -157,11 +168,9 @@ const About = () => {
                 <p className="text-muted-foreground mb-6">
                   Let's discuss how we can bring your vision to life.
                 </p>
-                <Button variant="hero" size="lg" asChild>
-                  <Link to="/contact">
+                <Button variant="hero" size="lg" onClick={openCalendly}>
                     Start Your Project
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
                 </Button>
               </div>
             </div>
