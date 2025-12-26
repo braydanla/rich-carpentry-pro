@@ -85,11 +85,13 @@ export const HeroSection = () => {
 
           {/* Logo Image */}
           <div className="hidden lg:flex lg:flex-1 justify-center animate-fade-in-delay-2">
-            <img
-              src={logoHero}
-              alt="Live Rich Finish Carpentry Logo"
-              className="w-full max-w-md drop-shadow-2xl"
-            />
+            <div className="w-full max-w-md overflow-hidden">
+              <img
+                src={logoHero}
+                alt="Live Rich Finish Carpentry Logo"
+                className="w-full drop-shadow-2xl -mt-3"
+              />
+            </div>
           </div>
         </div>
       </div>
