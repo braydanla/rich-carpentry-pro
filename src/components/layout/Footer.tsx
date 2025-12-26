@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
-import logoGold from "@/assets/logo-gold.png";
+import logoPatch from "@/assets/logo-patch.png";
 
 const footerLinks = {
   services: [
@@ -26,9 +26,9 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6 overflow-hidden">
               <img 
-                src={logoGold} 
+                src={logoPatch} 
                 alt="Live Rich Finish Carpentry" 
-                className="h-20 w-auto -mt-1"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
