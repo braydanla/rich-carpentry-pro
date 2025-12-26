@@ -33,11 +33,11 @@ export const Navbar = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-[4.5rem] md:h-20 lg:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group overflow-hidden">
             <img 
               src={logoGold} 
               alt="Live Rich Finish Carpentry" 
-              className="h-12 md:h-16 lg:h-20 w-auto drop-shadow-lg"
+              className="h-12 md:h-16 lg:h-20 w-auto drop-shadow-lg -mt-1"
             />
           </Link>
 
