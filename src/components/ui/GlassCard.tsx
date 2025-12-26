@@ -1,0 +1,24 @@
+import { cn } from "@/lib/utils";
+import { ReactNode, CSSProperties } from "react";
+
+interface GlassCardProps {
+  children: ReactNode;
+  className?: string;
+  hover?: boolean;
+  style?: CSSProperties;
+}
+
+export const GlassCard = ({ children, className, hover = true, style }: GlassCardProps) => {
+  return (
+    <div
+      className={cn(
+        hover ? "glass-card-hover" : "glass-card",
+        "p-6",
+        className
+      )}
+      style={style}
+    >
+      {children}
+    </div>
+  );
+};
