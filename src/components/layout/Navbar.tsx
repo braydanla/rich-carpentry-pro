@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logoGold from "@/assets/logo-gold.png";
+import logoPatch from "@/assets/logo-patch.png";
 
 declare global {
   interface Window {
@@ -35,9 +35,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group overflow-hidden">
             <img 
-              src={logoGold} 
+              src={logoPatch} 
               alt="Live Rich Finish Carpentry" 
-              className="h-12 md:h-16 lg:h-20 w-auto drop-shadow-lg -mt-1"
+              className="h-12 md:h-16 lg:h-20 w-auto drop-shadow-lg"
             />
           </Link>
 
