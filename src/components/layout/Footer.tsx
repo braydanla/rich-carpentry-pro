@@ -24,11 +24,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-block mb-6">
+            <Link to="/" className="inline-block mb-6 overflow-hidden">
               <img 
                 src={logoGold} 
                 alt="Live Rich Finish Carpentry" 
-                className="h-20 w-auto"
+                className="h-20 w-auto -mt-1"
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
