@@ -30,9 +30,14 @@ export const CTASection = () => {
             Let's Create Something{" "}
             <span className="text-gradient-gold">Beautiful</span>
           </h2>
-          <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg mb-4 max-w-2xl mx-auto">
             Schedule your free consultation today and discover how premium finish 
             carpentry can transform your space. No obligation, just expert advice.
+          </p>
+          <p className="text-muted-foreground text-base mb-10 max-w-2xl mx-auto">
+            During your consultation, we'll visit your home in Guelph, Kitchener, Waterloo, 
+            or Cambridge to discuss your vision, take measurements, and provide a detailed 
+            estimate. Most consultations take about 30 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" onClick={openCalendly}>

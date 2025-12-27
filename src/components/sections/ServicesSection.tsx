@@ -7,22 +7,22 @@ const services = [
   {
     icon: Crown,
     title: "Crown Molding",
-    description: "Elegant crown molding installations that add architectural beauty and value to any room.",
+    description: "Elegant crown molding installations that add architectural beauty and value to any room. We offer a variety of styles from traditional to contemporary, crafted from premium materials including solid wood and MDF for kitchens, living rooms, and bedrooms.",
   },
   {
     icon: Home,
     title: "Custom Cabinetry",
-    description: "Handcrafted cabinets designed to maximize space and complement your unique style.",
+    description: "Handcrafted cabinets designed to maximize space and complement your unique style. Whether it's kitchen cabinets, bathroom vanities, or custom storage solutions, we build to your exact specifications using quality hardwoods and finishes.",
   },
   {
     icon: Layers,
     title: "Trim & Baseboards",
-    description: "Precision trim work that provides the perfect finishing touch to your interiors.",
+    description: "Precision trim work that provides the perfect finishing touch to your interiors. Our services include door casing, window trim, wainscoting, and baseboards in various profiles to match any architectural style.",
   },
   {
     icon: PenTool,
     title: "Built-in Solutions",
-    description: "Custom built-ins, shelving, and entertainment centers tailored to your needs.",
+    description: "Custom built-ins, shelving, and entertainment centers tailored to your needs. From home office spaces and mudroom organization to closet systems and reading nooks, we create functional beauty that maximizes your space.",
   },
 ];
 
@@ -41,7 +41,9 @@ export const ServicesSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg">
             From concept to completion, we deliver exceptional craftsmanship that transforms 
-            ordinary spaces into extraordinary living environments.
+            ordinary spaces into extraordinary living environments. With over 15 years of experience 
+            serving Guelph and the Tri-Cities region, our finish carpenters combine traditional 
+            techniques with modern precision to create lasting results.
           </p>
         </div>
 
