@@ -90,12 +90,11 @@ const Blog = () => {
     }
 
     try {
-      await fetch(NEWSLETTER_WEBHOOK_URL, {
+      const response = await fetch(NEWSLETTER_WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        mode: "no-cors",
         body: JSON.stringify({
           // GHL standard fields
           email: email.trim(),
@@ -105,6 +104,10 @@ const Blog = () => {
           timestamp: new Date().toISOString(),
         }),
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       toast({
         title: "Subscribed!",
