@@ -97,7 +97,10 @@ const Blog = () => {
         },
         mode: "no-cors",
         body: JSON.stringify({
+          // GHL standard fields
           email: email.trim(),
+          tags: "Newsletter Subscriber",
+          // Metadata
           source: "Website Newsletter",
           timestamp: new Date().toISOString(),
         }),

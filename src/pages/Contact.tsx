@@ -88,6 +88,14 @@ const Contact = () => {
     const selectedServiceLabels = formData.services.map(
       (id) => serviceOptions.find((s) => s.id === id)?.label || id
     );
+    
+    // Convert services array to comma-separated string for GHL
+    const servicesString = selectedServiceLabels.join(', ');
+    
+    // Split name into first/last for GHL
+    const nameParts = formData.name.trim().split(' ');
+    const firstName = nameParts[0] || '';
+    const lastName = nameParts.slice(1).join(' ') || '';
 
     try {
       await fetch(CONTACT_WEBHOOK_URL, {
@@ -97,11 +105,19 @@ const Contact = () => {
         },
         mode: "no-cors",
         body: JSON.stringify({
-          name: formData.name.trim(),
+          // GHL standard fields
+          first_name: firstName,
+          last_name: lastName,
+          full_name: formData.name.trim(),
           email: formData.email.trim(),
           phone: formData.phone.trim(),
-          services: selectedServiceLabels,
+          // Services as string and tags for GHL
+          services: servicesString,
+          tags: servicesString,
+          // Message in multiple field names for GHL compatibility
           message: formData.message.trim(),
+          notes: formData.message.trim(),
+          // Metadata
           source: "Website Contact Form",
           timestamp: new Date().toISOString(),
         }),
