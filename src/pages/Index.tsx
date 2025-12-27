@@ -65,7 +65,7 @@ const Index = () => {
     <>
       <SEOHead
         title="Finish Carpentry Guelph | Custom Cabinetry & Trim Work | Live Rich"
-        description="Premier finish carpentry in Guelph, Kitchener & Waterloo. Custom cabinetry, crown molding, trim work & built-ins. Licensed, insured. Free consultation. Call (519) 827-5789"
+        description="Premier finish carpentry in Guelph, Kitchener & Waterloo. Custom cabinetry, crown molding, trim work & built-ins. Free consultation."
         keywords="finish carpentry Guelph, custom cabinetry Guelph, crown molding Kitchener, trim work Waterloo, finish carpenter near me, custom millwork Ontario, built-ins Guelph"
         canonicalUrl="https://liverichcarpentry.com"
         ogImage="https://liverichcarpentry.com/og-image.jpg"
