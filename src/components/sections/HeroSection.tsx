@@ -92,12 +92,12 @@ export const HeroSection = () => {
           </div>
 
           {/* Logo Image */}
-          <div className="hidden lg:flex lg:flex-1 justify-center animate-fade-in-delay-2">
-            <div className="w-full max-w-md overflow-hidden">
+          <div className="hidden lg:flex lg:flex-1 justify-center items-center animate-fade-in-delay-2">
+            <div className="w-full max-w-xl xl:max-w-2xl overflow-hidden">
               <img
                 src={logoHero}
                 alt="Live Rich Finish Carpentry Logo"
-                className="w-full drop-shadow-2xl -mt-3"
+                className="w-full drop-shadow-2xl"
                 loading="lazy"
                 decoding="async"
               />
