@@ -37,8 +37,9 @@ export const TestimonialsSection = () => {
             Say
           </h2>
           <p className="text-muted-foreground text-lg">
-            Don't just take our word for it—hear from homeowners who've experienced 
-            the Live Rich difference.
+            Don't just take our word for it—hear from homeowners across Guelph, Kitchener, 
+            and Waterloo who've experienced the Live Rich difference. With over 500 completed 
+            projects throughout the region, our commitment to client satisfaction speaks for itself.
           </p>
         </div>
 

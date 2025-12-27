@@ -31,6 +31,9 @@ export const HeroSection = () => {
           src={heroBg}
           alt="Premium custom cabinetry and finish carpentry work"
           className="w-full h-full object-cover opacity-20"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       </div>
@@ -53,10 +56,15 @@ export const HeroSection = () => {
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed animate-fade-in-delay-2">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed animate-fade-in-delay-2">
               Transform your home with premium finish carpentry. From custom cabinetry to 
               elegant trim work, we deliver meticulous craftsmanship that reflects the richness 
               of your vision.
+            </p>
+            <p className="text-base text-muted-foreground max-w-2xl mb-8 leading-relaxed animate-fade-in-delay-2">
+              Serving Guelph, Kitchener, Waterloo, Cambridge, and the Tri-Cities region with 
+              over 15 years of professional finish carpentry experience. We're proud to be the 
+              trusted choice for homeowners and interior designers throughout Southwestern Ontario.
             </p>
 
             {/* CTA Buttons */}
@@ -90,6 +98,8 @@ export const HeroSection = () => {
                 src={logoHero}
                 alt="Live Rich Finish Carpentry Logo"
                 className="w-full drop-shadow-2xl -mt-3"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

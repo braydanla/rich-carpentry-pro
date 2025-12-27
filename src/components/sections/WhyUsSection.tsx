@@ -30,17 +30,23 @@ export const WhyUsSection = () => {
               <span className="text-gradient-gold">Richness</span>{" "}
               Meets Craftsmanship
             </h2>
-            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+            <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
               At Live Rich Finish Carpentry, we believe true wealth comes from 
               surrounding yourself with quality. Our name reflects our values—craftsmanship 
               that enriches your life, not just your home.
             </p>
+            <p className="text-muted-foreground text-base mb-8 leading-relaxed">
+              Based in Guelph and proudly serving homeowners throughout Kitchener, Waterloo, 
+              Cambridge, and the greater Tri-Cities area, we've built our reputation on delivering 
+              exceptional finish carpentry that stands the test of time. We partner with local 
+              suppliers to source premium Canadian materials whenever possible.
+            </p>
             <ul className="space-y-4 mb-8">
               {[
-                "Meticulous attention to every detail",
-                "Premium materials and techniques",
-                "Transparent communication throughout",
-                "On-time project completion",
+                "Meticulous attention to every detail and joint",
+                "Premium Canadian materials and time-tested techniques",
+                "Transparent communication and pricing throughout",
+                "On-time, on-budget project completion guaranteed",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
