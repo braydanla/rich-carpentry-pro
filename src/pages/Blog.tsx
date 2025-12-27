@@ -151,40 +151,48 @@ const Blog = () => {
             {/* Blog Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <GlassCard
+                <Link
                   key={post.slug}
-                  className="animate-fade-in-up flex flex-col"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  to={`/blog/${post.slug}`}
+                  className="group"
                 >
-                  {/* Category Badge */}
-                  <div className="inline-flex mb-4">
-                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
-                      {post.category}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h2 className="text-xl font-semibold mb-3 text-foreground">
-                    {post.title}
-                  </h2>
-
-                  {/* Excerpt */}
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
-                    {post.excerpt}
-                  </p>
-
-                  {/* Meta */}
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground border-t border-border/50 pt-4">
-                    <div className="flex items-center gap-1.5">
-                      <Calendar className="h-3.5 w-3.5" />
-                      <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                  <GlassCard
+                    className="animate-fade-in-up flex flex-col h-full transition-all duration-300 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_hsl(51_100%_50%_/_0.1)]"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {/* Category Badge */}
+                    <div className="inline-flex mb-4">
+                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
+                        {post.category}
+                      </span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                      <Clock className="h-3.5 w-3.5" />
-                      <span>{post.readTime}</span>
+
+                    {/* Title */}
+                    <h2 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+
+                    {/* Excerpt */}
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
+                      {post.excerpt}
+                    </p>
+
+                    {/* Meta */}
+                    <div className="flex items-center justify-between text-xs text-muted-foreground border-t border-border/50 pt-4">
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-1.5">
+                          <Calendar className="h-3.5 w-3.5" />
+                          <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <Clock className="h-3.5 w-3.5" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
-                  </div>
-                </GlassCard>
+                  </GlassCard>
+                </Link>
               ))}
             </div>
 
