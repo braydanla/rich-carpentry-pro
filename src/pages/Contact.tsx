@@ -144,8 +144,8 @@ const Contact = () => {
         title="Contact Finish Carpenter Guelph | Free Consultation | Live Rich"
         description="Book your free finish carpentry consultation in Guelph. Call (519) 827-5789 for custom cabinetry, crown molding & trim work quotes. Serving Kitchener-Waterloo."
         keywords="contact finish carpenter Guelph, free carpentry consultation, carpentry quote Kitchener, woodwork estimate Waterloo, book carpenter Ontario"
-        canonicalUrl="https://liverichcarpentry.com/contact"
-        ogImage="https://liverichcarpentry.com/og-image.jpg"
+        canonicalUrl="https://liverichfinishcarpentry.com/contact"
+        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",

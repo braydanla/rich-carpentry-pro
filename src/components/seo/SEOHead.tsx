@@ -15,7 +15,7 @@ export const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://liverichcarpentry.com/og-image.jpg",
+  ogImage = "https://liverichfinishcarpentry.com/og-image.jpg",
   ogType = "website",
   structuredData,
 }: SEOHeadProps) => {

@@ -54,8 +54,8 @@ const About = () => {
         title="About Live Rich Finish Carpentry | Guelph's Trusted Carpenters"
         description="Meet Guelph's premier finish carpentry team. 15+ years experience, 500+ projects completed. Licensed & insured craftsmen serving Kitchener-Waterloo region."
         keywords="finish carpentry company Guelph, trusted carpenters Ontario, experienced woodworkers Kitchener, quality craftsmanship Waterloo"
-        canonicalUrl="https://liverichcarpentry.com/about"
-        ogImage="https://liverichcarpentry.com/og-image.jpg"
+        canonicalUrl="https://liverichfinishcarpentry.com/about"
+        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
       />
       <Layout>
         {/* Hero Section */}

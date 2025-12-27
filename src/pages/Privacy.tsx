@@ -8,7 +8,7 @@ const Privacy = () => {
         title="Privacy Policy | Live Rich Finish Carpentry"
         description="Learn how Live Rich Finish Carpentry protects your personal information in accordance with PIPEDA. Read our complete privacy policy."
         keywords="privacy policy, data protection, PIPEDA, personal information, Live Rich Finish Carpentry"
-        canonicalUrl="https://liverichcarpentry.com/privacy"
+        canonicalUrl="https://liverichfinishcarpentry.com/privacy"
       />
       <Layout>
         <section className="pt-12 pb-24 hero-glow">

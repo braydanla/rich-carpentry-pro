@@ -8,7 +8,7 @@ const Terms = () => {
         title="Terms and Conditions | Live Rich Finish Carpentry"
         description="Read the terms and conditions for using the Live Rich Finish Carpentry website. Governed by Ontario and Canadian law."
         keywords="terms and conditions, terms of service, legal, Live Rich Finish Carpentry"
-        canonicalUrl="https://liverichcarpentry.com/terms"
+        canonicalUrl="https://liverichfinishcarpentry.com/terms"
       />
       <Layout>
         <section className="pt-12 pb-24 hero-glow">
