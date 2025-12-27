@@ -97,7 +97,7 @@ export const HeroSection = () => {
               <img
                 src={logoHero}
                 alt="Live Rich Finish Carpentry Logo"
-                className="w-full drop-shadow-2xl"
+                className="w-full drop-shadow-2xl -mt-8"
                 loading="lazy"
                 decoding="async"
               />
