@@ -481,14 +481,14 @@ const BlogPost = () => {
       name: "Live Rich Finish Carpentry",
       logo: {
         "@type": "ImageObject",
-        url: "https://liverichfinishcarpentry.com/logo-gold.png",
+        url: "https://www.liverichfinishcarpentry.com/logo-gold.png",
       },
     },
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://liverichfinishcarpentry.com/blog/${post.slug}`,
+      "@id": `https://www.liverichfinishcarpentry.com/blog/${post.slug}`,
     },
   };
 
@@ -498,8 +498,8 @@ const BlogPost = () => {
         title={`${post.title} | Live Rich Finish Carpentry Blog`}
         description={post.metaDescription}
         keywords={`finish carpentry, ${post.category.toLowerCase()}, Guelph carpentry, Kitchener Waterloo woodworking, ${post.title.toLowerCase()}`}
-        canonicalUrl={`https://liverichfinishcarpentry.com/blog/${post.slug}`}
-        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
+        canonicalUrl={`https://www.liverichfinishcarpentry.com/blog/${post.slug}`}
+        ogImage="https://www.liverichfinishcarpentry.com/og-image.jpg"
         structuredData={structuredData}
       />
       <Layout>

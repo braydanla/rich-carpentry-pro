@@ -12,7 +12,7 @@ const structuredData = {
   "@type": "HomeAndConstructionBusiness",
   "name": "Live Rich Finish Carpentry",
   "description": "Premium finish carpentry services in Guelph, Ontario. Custom cabinetry, crown molding, trim work, and built-ins crafted with precision.",
-  "url": "https://liverichfinishcarpentry.com",
+  "url": "https://www.liverichfinishcarpentry.com",
   "telephone": "+15198275789",
   "email": "info@liverichfinishcarpentry.com",
   "address": {
@@ -35,8 +35,8 @@ const structuredData = {
     { "@type": "City", "name": "Cambridge", "containedInPlace": { "@type": "State", "name": "Ontario" } }
   ],
   "priceRange": "$$",
-  "image": "https://liverichfinishcarpentry.com/og-image.jpg",
-  "logo": "https://liverichfinishcarpentry.com/logo.png",
+  "image": "https://www.liverichfinishcarpentry.com/og-image.jpg",
+  "logo": "https://www.liverichfinishcarpentry.com/logo.png",
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -68,8 +68,8 @@ const Index = () => {
         title="Finish Carpentry Guelph | Custom Cabinetry & Trim Work | Live Rich"
         description="Premier finish carpentry in Guelph, Kitchener & Waterloo. Custom cabinetry, crown molding, trim work & built-ins. Free consultation."
         keywords="finish carpentry Guelph, custom cabinetry Guelph, crown molding Kitchener, trim work Waterloo, finish carpenter near me, custom millwork Ontario, built-ins Guelph"
-        canonicalUrl="https://liverichfinishcarpentry.com"
-        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
+        canonicalUrl="https://www.liverichfinishcarpentry.com/"
+        ogImage="https://www.liverichfinishcarpentry.com/og-image.jpg"
         structuredData={structuredData}
       />
       <Layout>
