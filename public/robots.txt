@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://liverichfinishcarpentry.com/sitemap.xml
+Sitemap: https://www.liverichfinishcarpentry.com/sitemap.xml

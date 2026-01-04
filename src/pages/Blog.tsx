@@ -133,8 +133,8 @@ const Blog = () => {
         title="Finish Carpentry Blog | Tips & Guides | Guelph Woodworking"
         description="Expert finish carpentry tips from Guelph professionals. Guides on crown molding, custom cabinetry, wood species, and home improvement ideas for Ontario homeowners."
         keywords="finish carpentry tips Guelph, woodworking blog Ontario, crown molding guide, cabinet installation tips, home improvement Kitchener Waterloo"
-        canonicalUrl="https://liverichfinishcarpentry.com/blog"
-        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
+        canonicalUrl="https://www.liverichfinishcarpentry.com/blog"
+        ogImage="https://www.liverichfinishcarpentry.com/og-image.jpg"
       />
       <Layout>
         <section className="pt-12 pb-24 hero-glow">

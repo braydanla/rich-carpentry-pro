@@ -92,8 +92,8 @@ const Services = () => {
         title="Finish Carpentry Services Guelph | Cabinetry, Crown Molding, Trim"
         description="Expert finish carpentry services in Guelph, Kitchener & Waterloo. Custom cabinetry, crown molding, trim work, built-ins, millwork & restoration. Free quotes."
         keywords="finish carpentry services Guelph, custom cabinetry Kitchener, crown molding installation Waterloo, trim work Ontario, built-in shelves, custom millwork"
-        canonicalUrl="https://liverichfinishcarpentry.com/services"
-        ogImage="https://liverichfinishcarpentry.com/og-image.jpg"
+        canonicalUrl="https://www.liverichfinishcarpentry.com/services"
+        ogImage="https://www.liverichfinishcarpentry.com/og-image.jpg"
         structuredData={structuredData}
       />
       <Layout>
