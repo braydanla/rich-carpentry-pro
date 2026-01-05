@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, ArrowRight } from "lucide-react";
+import { BookingModal } from "@/components/BookingModal";
 
 interface BlogPostData {
   slug: string;
@@ -561,16 +562,12 @@ const BlogPost = () => {
                   Whether you're envisioning custom crown molding, built-in cabinetry, 
                   or complete trim work, we'd love to hear about your project.
                 </p>
-                <Button variant="hero" size="lg" asChild>
-                  <a
-                    href="https://calendly.com/sean_golley/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <BookingModal>
+                  <Button variant="hero" size="lg">
                     Book a Free Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  </Button>
+                </BookingModal>
               </div>
             </div>
 
