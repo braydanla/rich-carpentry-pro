@@ -104,10 +104,14 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          // GHL standard fields (camelCase as expected by GHL)
+          // Name fields in BOTH formats for maximum GHL compatibility
           firstName: firstName,
           lastName: lastName,
+          first_name: firstName,
+          last_name: lastName,
           name: formData.name.trim(),
+          full_name: formData.name.trim(),
+          // Contact info
           email: formData.email.trim(),
           phone: formData.phone.trim(),
           // Services as string and tags for GHL
