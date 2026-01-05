@@ -3,18 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
 import logoPatch from "@/assets/logo-patch.png";
-
-declare global {
-  interface Window {
-    Calendly: {
-      initPopupWidget: (options: { url: string }) => void;
-    };
-  }
-}
-
-const openCalendly = () => {
-  window.Calendly?.initPopupWidget({ url: 'https://calendly.com/sean_golley/30min' });
-};
+import { BookingModal } from "@/components/BookingModal";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -60,10 +49,12 @@ export const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="hero" size="lg" onClick={openCalendly}>
-              Book Consultation
-              <ArrowRight className="ml-1 h-4 w-4" />
-            </Button>
+            <BookingModal>
+              <Button variant="hero" size="lg">
+                Book Consultation
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+            </BookingModal>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,10 +85,12 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button variant="hero" size="lg" className="mt-4" onClick={() => { setIsOpen(false); openCalendly(); }}>
-                Book Consultation
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
+              <BookingModal>
+                <Button variant="hero" size="lg" className="mt-4" onClick={() => setIsOpen(false)}>
+                  Book Consultation
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </Button>
+              </BookingModal>
             </div>
           </div>
         )}

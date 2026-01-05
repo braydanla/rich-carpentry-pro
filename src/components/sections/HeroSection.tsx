@@ -3,18 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import heroBg from "@/assets/hero-carpentry.jpg";
 import logoHero from "@/assets/logo-hero.png";
-
-declare global {
-  interface Window {
-    Calendly: {
-      initPopupWidget: (options: { url: string }) => void;
-    };
-  }
-}
-
-const openCalendly = () => {
-  window.Calendly?.initPopupWidget({ url: 'https://calendly.com/sean_golley/30min' });
-};
+import { BookingModal } from "@/components/BookingModal";
 
 const heroFeatures = [
   "Premium craftsmanship",
@@ -69,10 +58,12 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-delay-3">
-              <Button variant="hero" size="xl" onClick={openCalendly}>
-                Book Free Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <BookingModal>
+                <Button variant="hero" size="xl">
+                  Book Free Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </BookingModal>
               <Button variant="glass" size="xl" asChild>
                 <Link to="/services">
                   See What We Do

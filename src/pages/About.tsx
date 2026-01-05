@@ -3,18 +3,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Clock, Heart, Shield, Target, Users } from "lucide-react";
-
-declare global {
-  interface Window {
-    Calendly: {
-      initPopupWidget: (options: { url: string }) => void;
-    };
-  }
-}
-
-const openCalendly = () => {
-  window.Calendly?.initPopupWidget({ url: 'https://calendly.com/sean_golley/30min' });
-};
+import { BookingModal } from "@/components/BookingModal";
 
 const values = [
   {
@@ -168,10 +157,12 @@ const About = () => {
                 <p className="text-muted-foreground mb-6">
                   Let's discuss how we can bring your vision to life.
                 </p>
-                <Button variant="hero" size="lg" onClick={openCalendly}>
+                <BookingModal>
+                  <Button variant="hero" size="lg">
                     Start Your Project
                     <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                  </Button>
+                </BookingModal>
               </div>
             </div>
           </div>
